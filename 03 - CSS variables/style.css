@@ -7,8 +7,8 @@
 }
 
 :root {
-    --theme: #ff4500;
-    --border: 10px;
+    --theme: #EC7501;
+    --border: 5px;
     --blur: 0px;
     --grey-scale: 0;
     --hue: 0deg;
@@ -18,6 +18,7 @@ body {
     font-family: 'Grandstander', cursive;
     background-color: #1c1c1c;
     color: white;
+    padding: 3em;
 }
 
 .container {
@@ -28,7 +29,7 @@ body {
 h1 {
     text-align: center;
     font-size: 3.8em;
-    margin: 2rem auto;
+    margin: 0 auto;
     position: relative;
     width: max-content;
 }
@@ -43,6 +44,24 @@ h1::before {
     background-color: var(--theme);
     z-index: -1;
 }
+
+.controls {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: center;
+    margin: 1em 0;
+}
+
+.control {
+    text-align: center;
+    font-size: 1.4em;
+    padding: 0.7em;
+}
+
+.colour-control {
+    grid-column: 1 / -1;
+}
+
 
 .result {
     background-color: var(--theme);
