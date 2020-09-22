@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	
+/* ---Variables--- */	
+
+	--clr--kb: red;
+	--clr--pb: yellow;
+	--bx-sz: 80px;
+	
+}
+
+.keys {
+	display: grid;
+	grid-template-columns: repeat(9, 110px);
+}
+
+.key {
+	height: var(--bx-sz);
+	width: var(--bx-sz);
+	border: solid 2px var(--clr--kb);
+	text-align: center;
+	transition: all 0.1s;
+	
+}
+
+.key p {
+	line-height: var(--bx-sz);
+	
+}
+
+.playing {
+	border: solid 3px var(--clr--pb);
+	transform: scale(1.1);
+}
